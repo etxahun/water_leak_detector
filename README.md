@@ -19,7 +19,7 @@ Just run the server with:
 
      $ npm start
 
-and open the browser introducing your RPi's {IP_Address}:
+and open the browser typing your RPi's {IP_Address}:
 
      http://{RPI_IP_Address}:8080
 
