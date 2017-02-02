@@ -7,11 +7,15 @@ Just install the modules:
 
     $ npm install
 
-## Usage
+## Configuration
 
 In order to link the socket.io client and server, configure your IP address in "public/main.js" file.
 
-Then just run the server with:
+For e-mail notification please configure your Gmail data in "server/nodemailer.js" file.
+
+## Usage
+
+Just run the server with:
 
      $ npm start
 
