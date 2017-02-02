@@ -56,5 +56,5 @@ function exit() {
 process.on('SIGINT', exit);
 
 server.listen(8080, function() {
-    console.log('Servidor corriendo en http://192.168.20.83:8080');
+    console.log('Servidor corriendo en http://x.x.x.x:8080');
 });
