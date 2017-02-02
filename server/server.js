@@ -56,5 +56,8 @@ function exit() {
 process.on('SIGINT', exit);
 
 server.listen(8080, function() {
-    console.log('Servidor corriendo en http://x.x.x.x:8080');
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log('Server running @ http://' + host + ':' + port);
+    //console.log('Server running @ http://192.168.20.83');
 });
