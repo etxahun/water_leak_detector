@@ -1,0 +1,61 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de detección de escape de agua</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <style type="text/css">
+
+      .disp-none {
+          display: none;
+      }
+
+      /*
+      body {
+          background: skyblue;
+          color: white;
+      }*/
+
+      .img {
+          margin-top: -39px;
+      }
+
+      .night {
+          background: #aaa;
+      }
+
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:8px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:8px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+      .tg .tg-vg63{font-weight:bold;font-family:Tahoma, Geneva, sans-serif !important;;background-color:#c0c0c0;text-align:center;vertical-align:top}
+      .tg .tg-baqh{text-align:center;vertical-align:cener}
+      .tg .tg-vspe{font-family:Tahoma, Geneva, sans-serif !important;;text-align:center;vertical-align:top}
+      .tg .tg-yw4l{vertical-align:top;width:160px}
+
+</style>
+</head>  
+<body>  
+  <h2>Lectura de sensores</h2>
+  <hr>
+  <br>
+  <table class="tg">
+     <tr>
+          <th class="tg-vg63">Ubicación</th>
+          <th class="tg-vg63" colspan="2">Estado</th>
+     </tr>
+     <tr>
+          <td class="tg-vspe">Radiador </td>
+          <td class="tg-baqh">
+  	      <!--<img src="/green.png" width="15px" height="15px"id="green" class="disp-none">
+              <img src="/red.png" width="15px" height="15px" id="red" class="disp-none">-->
+              <img src="" width="15px" height="15px" id="icono">
+          </td>
+          <td class="tg-yw4l" id="valsensor"></td>
+     </tr>
+  </table>
+</body>  
+</html>  
