@@ -2,8 +2,8 @@ var nodemailer=require('nodemailer');
 var transporter=nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'etxahun.sanchez@gmail.com',
-      pass: 'etxahun101281sanchez'
+      user: '<gmail_email>',
+      pass: '<your_password>'
     }
 });
 
@@ -20,8 +20,8 @@ module.exports.sendEmail=function() {
     console.log('Enviando un E-mail...');
 
     var mailOptions={
-      from: 'DomoNESB <etxahun.sanchez@gmail.com>',
-      to: 'etxahun.sanchez@gmail.com',
+      from: '<from_email_address>',
+      to: '<destination_email_address>',
       subject: 'Kontuz! Ura irteten hasi da!',
       html: '<b>Kontuz!</b><br /><br />Ura irteten hasi da!<br /> <br /><b>Data: </b>' + Date()
     };
@@ -30,7 +30,7 @@ module.exports.sendEmail=function() {
       if (error) {
         console.log(error);
       } else {
-        console.log('Mensaje enviado: ' + info.response);
+        console.log('An e-mail has been sent: ' + info.response);
       }
     });
 }
